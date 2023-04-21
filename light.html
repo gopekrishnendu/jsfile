@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    
+</head>
+
+<body>
+    <CENTER>
+        <img id="bulb" scr="bulb.png" height="500px" width="500px">
+    </CENTER>
+    <script>
+        function switchBoard (mode) {
+            var pic;
+            if(mode == 0){
+                pic = "bulb.png";  
+            }
+            else{
+                pic="lightbulb.png";
+
+            }
+            document.getElementById('bulb').src = pic;
+        }
+    </script>
+    <center>
+        <button type="button" onclick="switchBoard(1)">Switch On</button>
+        <button type="button" onclick="switchBoard(0)">Switch off</button>
+    
+    </center>
+</body>
+</html>
